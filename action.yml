@@ -67,3 +67,4 @@ runs:
 
         echo "Creating initial catalog '${{ inputs.catalog }}'"
         sqlcmd -Q "CREATE DATABASE [${{ inputs.catalog }}]"
+        sqlcmd -Q "SELECT 1"
